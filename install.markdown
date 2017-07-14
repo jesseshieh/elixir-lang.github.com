@@ -96,6 +96,16 @@ run.config:
   engine: elixir
 ```
 
+### Gigalixir
+
+For developers using [Gigalixir](https://gigalixir.com), simply specify the `elixir_version` in your [`elixir_buildpack.config`](https://github.com/HashNuke/heroku-buildpack-elixir#configuration) at the root of your repository and run `git push gigalixir master`.
+
+```
+elixir_version=1.4.2
+```
+
+If you don't have an `elixir_buildpack.config` file, [these defaults](https://github.com/HashNuke/heroku-buildpack-elixir/blob/master/elixir_buildpack.config) will be used.
+
 ## Precompiled package
 
 Elixir provides a precompiled package for every release. First [install Erlang](/install.html#installing-erlang) and then download and unzip the [Precompiled.zip file for the latest release](https://github.com/elixir-lang/elixir/releases/download/v{{ stable.version }}/Precompiled.zip).
